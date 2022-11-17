@@ -1,0 +1,10 @@
+
+      Abstract class                                                              interface
+
+1)have abstract and non-abstract methods                  1)only abstract methods
+2)doesn't support multiple inheritance                    2)supports multiple inheritance
+3)abstract keyword is used to declare abstract class      3)interface keyword is used to declare interface
+4)extended using keyword "extends"                        4)implemented using keyword "implements"
+5)have final, non-final, static and non-static variables  5)only static and final variables
+6)provide the implementation of interface                 6)can't provide the implementation of abstract class
+7)extend another class & implement multiple interfaces    7)can extend another Java interface only
