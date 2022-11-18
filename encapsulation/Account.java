@@ -29,7 +29,8 @@ public class Account {
         this.amount = amount;
     }
 }
-class accountImpl{
+
+class accountImpl {
     public static void main(String[] args) {
         Account account = new Account();
         account.setAccountNo(89503);
