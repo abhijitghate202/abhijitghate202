@@ -12,6 +12,26 @@ Ways to create a String
   -- by using string literal
 3. String s1 = "WELCOME";
 
+String Buffer
+ - a final class
+ - implements Serializable, Comparable<StringBuffer>, CharSequence
+ - a thread safe so multiple threads can not access it simultaneously
+ - methods are synchronised
+ - mutable(modifiable) i.e. it can be changed
+ - capacity() returns the current capacity of the buffer
+ - default capacity of buffer is 16
+
+ String Builder
+ - a final class
+ - implements java.io.Serializable, Comparable<StringBuilder>, CharSequence
+ -  mutable(modifiable) i.e. it can be changed
+ - methods are non-synchronised
+ - not a thread safe
+
+Steps for Custom Immutable class
+1. create a final class
+2. make instance variables of the class as final
+
 String Pool Constant
 - @ the time when we create a string literal, the JVM first checks the SCP(String Constant Pool).
 	If the string is already exists in pool, a ref to the pooled instance is returned,
