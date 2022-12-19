@@ -41,3 +41,16 @@ String Pool Constant
 	Immutable String
      - unmodifiable or unchangeable
      - state & data can not be changed
+
+     2. Diff between String,StringBuffer,StringBuilder
+
+     	String                       StringBuffer                        StringBuilder
+     1.  final class                  final  class                        final class
+     2.  Immutable                    Mutable                             Mutable
+     3.  non-thread safe              thread safe                         non-thread safe
+     4.  non-synchronized             synchronized                        non-synchronized
+     5.  string is slow &            fast & consumes less
+     	consumes more memory        memory
+     6.  overrides equals()           doesn't override
+     7.  stored in SCP               stored Heap Area
+     8.	                            less efficient                        more efficient

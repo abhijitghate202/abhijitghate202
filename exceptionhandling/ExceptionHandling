@@ -1,0 +1,47 @@
+- To handle runtime errors
+
+1) Checked Exception -
+    - compile time exception
+    - IO Exception , SQL Exception
+
+2) Unchecked Exception -
+    - Run time Exception
+
+Error - irrecoverable
+
+Throwable
+          - Exception
+                    - IO Exception
+                    - Sql Exception
+                    - ClassNotFoundException
+                    - FileNotFoundException
+                    - RunTimeException
+                            - ArithmeticException
+                            - NullPointerException
+                            - IndexOutOfBoundException
+                            - NumberFormatException
+
+          - Error
+                    - StackOverFlowError
+                    - OutOfMemoryError
+                    - VirtualMachineError
+
+Reasons for exceptions:
+1. Invalid user input
+2. network connection error
+3. Out of memory
+
+1. try
+	- place an exception code
+	- must be followed by either catch or finally
+
+2. catch
+	- handle the exception
+	- without try not allow
+
+
+1. try
+2. catch
+3. finally
+4. throw
+5. throws
