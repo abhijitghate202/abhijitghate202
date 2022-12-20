@@ -16,10 +16,10 @@ Throwable
                     - ClassNotFoundException
                     - FileNotFoundException
                     - RunTimeException
-                            - ArithmeticException
-                            - NullPointerException
-                            - IndexOutOfBoundException
-                            - NumberFormatException
+                            - ArithmeticException : If we divide any number by zero then
+                            - NullPointerException : If we have null value in any variable. eg- String s1 = null
+                            - IndexOutOfBoundException : When an Array exceeds to its size.
+                            - NumberFormatException : Converting string variable into digit. eg- parseInt
 
           - Error
                     - StackOverFlowError
