@@ -1,10 +1,10 @@
 - To handle runtime errors
 
-1) Checked Exception -
+1) Checked Exception - Exception should be handled first otherwise it wont run
     - compile time exception
     - IO Exception , SQL Exception
 
-2) Unchecked Exception -
+2) Unchecked Exception - it does not matter
     - Run time Exception
 
 Error - irrecoverable
