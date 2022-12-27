@@ -48,5 +48,16 @@ Reasons for exceptions:
 	- to throw an exception explicitly
     - can throw either checked or unchecked exception
 5. throws
+    -Declare the exception
+    - Suppress the Exception
+
+    	throw                           throws
+    1. used to throw an                declare the exception
+       exception explicitly
+
+    2. can only propagate             can used to propagate checked &
+       the unchecked exceptions       unchecked exception
+
+    3. within a method                with method signature
 
 HW Voting Criteria

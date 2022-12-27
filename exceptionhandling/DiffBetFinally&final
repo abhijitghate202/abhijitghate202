@@ -1,6 +1,8 @@
-            Final                                           Finally
+            Final                                           Finally                                     Finalize
 
-1)Final Variable cannot be modified             1)Finally block always run even if there is exception occurs or not
-2)Cannot be Overridden by subclass              2)It is related to try catch method
-3)Cannot be inherited                           3)It executed as soon as the try-catch block is executed.
+1)Final Variable cannot be modified             1)Finally block always run even if          1)used to perform clean up processing
+                                                  there is exception occurs or not            before object is garbage collected
+2)Cannot be Overridden by subclass              2)It is related to try catch method         2)Used with The Objects
+3)Cannot be inherited                           3)It executed as soon as the try-catch      3)It is Executed before object is destroyed
+                                                    block is executed.
 4)It is executed only when we call it
