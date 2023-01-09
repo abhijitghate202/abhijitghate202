@@ -1,0 +1,45 @@
+Database
+- Collection of data
+
+
+Relational Database
+ SQL - Structured Query Language
+ eg. MySQL, MS-SQL,Oracle.
+
+ Database management System
+ -How to access the database,manipulate data,represent data.
+
+ MySQL
+ - open Source
+
+ JDBC ( Java Database Connectivity)
+ - Client Server Application
+
+
+ 7 Steps to connect Java application with DB
+ 1. import packages
+ 2. Load & register the driver
+ 	- Class.forName("com.mysql.jdbc.Driver")
+ 	- method is used to dynamically load the driver class
+ 3. Connecting & establish the connection
+ 	- Connection con = DriverManager.getConnection("url","username","password");
+ 	- to establish connection with database
+ 4. create statement
+ 	1. Statement - select
+ 	2. PreparedStatement
+ 		- insert,update,delete,create
+ 		- used to execute parameterized query
+ 	3. CallableStatement - procedure
+ 5. Execute the query
+ 	1. ResultSet executeQuery();
+ 	2. int executeUpdate();
+ 6. Process the result
+ 7. Close the connection
+
+ JDBC Driver
+ 	- a s/w component that enables java application to interact with DB
+ 	Types :
+ 		1. JDBC-ODBC Bridge Driver
+ 		2. Native-API Driver
+ 		3. Network Protocol driver
+ 		4. Thin Driver(fully written in JAVA)
