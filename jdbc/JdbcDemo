@@ -43,3 +43,22 @@ Relational Database
  		2. Native-API Driver
  		3. Network Protocol driver
  		4. Thin Driver(fully written in JAVA)
+
+Driver Manager
+ 		 -
+
+//Stored Procedure
+- pre compiled SQL statements stored in database
+Types:
+1. procedure with no parameter
+2. procedure with IN parameter
+3. procedure with OUT parameter
+4. procedure with IN-OUT parameter
+
+
+delimiter/
+create procedure getAll()
+begin
+select * from employee;
+end
+/

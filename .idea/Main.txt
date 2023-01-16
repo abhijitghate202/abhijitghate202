@@ -1,0 +1,33 @@
+Public static void main(String[] args)
+
+Access specifier :-
+1)private
+2)protected
+3)default
+4)Public
+
+public :
+	- access specifier
+	- JVM can invoke this method from outside of class as it not present in current class
+	- JVM can identify method for execution
+	- accessible everywhere
+
+static
+	- keyword
+	- without creating an object class main method is call
+	- we don't need to call the main()
+
+void
+	- return type
+	- every method has the return type in java
+	- doesn't return any value
+
+main()
+	- method name
+	- default signature, predefined in JVM
+	- JVM execute a program line by line
+	- entry point of the aaplication
+
+
+String args[]
+	- array of string type

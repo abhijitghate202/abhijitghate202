@@ -63,3 +63,11 @@ Reasons for exceptions:
 HW Voting Criteria
 Userdefined exception handle throws - negative value
 menu driven
+//void deposit(double depositAmount)throws InvalidAmountException {
+          if (depositAmount <= 0){
+              throw new InvalidAmountException("Invalid Amount");
+          }else {
+              amount += depositAmount;
+              System.out.println("Balance: " + amount);
+          }
+      }
