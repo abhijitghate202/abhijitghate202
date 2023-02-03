@@ -116,6 +116,15 @@ DeadLock
   that is acquired by another thread & second thread is
  waiting for an object lock that is acquired by first thread.
  Since, both threads are waiting for each other to release the lock
+
+
+ In computing, the producer-consumer problem (also known as the bounded-buffer problem) is a classic example of a multi-process synchronization problem.
+ The problem describes two processes, the producer and the consumer, which share a common, fixed-size buffer used as a queue.
+
+ The producer’s job is to generate data, put it into the buffer, and start again.
+ At the same time, the consumer is consuming the data (i.e. removing it from the buffer), one piece at a time.
+
+
 Synchronisation
 	- if we want to allow only one thread to access the shared resource.
 	- prevent thread interference
@@ -129,7 +138,7 @@ Synchronisation
 			2. Synchronized block
 				- synchronizes portion of method
 			3. static synchronization
-				- lock will be on the class
+				- lock will be on the class instead of object
 	b) Cooperation(Inter-Thread communication)
 		- allowing synchronised threads to communicate with each other
 		- wait(),notify(),notifyAll()
@@ -161,8 +170,24 @@ Notes:
 Homework
 1. Difference between Thread & Process
 2. difference between yield() & join() & sleep()
+
+yield -It makes current running thread to move in to runnable state from running state giving chance to remaining threads of equal priority which are in waiting state.
+       It makes current thread sleep for specific amount of time.There is no guarantee that moving a current running thread from runnable to running state.
+       It all depends on Thread Scheduler.
+       Calling yield method on thread does not have any effect if object has a lock.The thread doesn't lose any lock if it has acquired a lock earlier
+
+join-A thread can invoke the join method on other thread to wait for other thread to complete its execution.
+     Join method throws interrupted exception & can be handled by throws or by using try catch block block.
+
+sleep-this method causes current running thread to sleep for specific amount time.
+      It is the minimum amount of the time the current thread sleeps but not exact amount of time.
+
+wait - it makes the current thread sleeps& releases the lock until some other thread acquires the lock and calls & calls notify().
+
+
 3. movie ticket
 	//no of seats - 150 seats
 	- bookTicket
 4. bank example by static synchronisation
 5. bus ticket reservation
+6. Diff bet wait & sleep
