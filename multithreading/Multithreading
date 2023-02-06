@@ -169,7 +169,7 @@ Notes:
    The selection of the threads for execution depends upon the thread scheduler
 Homework
 1. Difference between Thread & Process
-2. difference between yield() & join() & sleep()
+2. difference between yield() & join() & sleep() & Wait()
 
 yield -It makes current running thread to move in to runnable state from running state giving chance to remaining threads of equal priority which are in waiting state.
        It makes current thread sleep for specific amount of time.There is no guarantee that moving a current running thread from runnable to running state.
@@ -183,7 +183,7 @@ sleep-this method causes current running thread to sleep for specific amount tim
       It is the minimum amount of the time the current thread sleeps but not exact amount of time.
 
 wait - it makes the current thread sleeps& releases the lock until some other thread acquires the lock and calls & calls notify().
-
+        Illegal monitor state exception
 
 3. movie ticket
 	//no of seats - 150 seats
