@@ -17,6 +17,8 @@ Generics
 	- provides the functionality of resizable-arrays
 	- implements List(I)
 	- methods are not synchronised
+	- an ordered collection,follows the insertion order
+    - contains duplicate elements
 
 3. Vector(C)
 	- implements List(I)
@@ -28,6 +30,10 @@ Generics
 	- extends Vector class
 5. LinkedList(C)
 	- data structure Doubly-linked list
+	- follows the insertion order
+    - no synchronised
+    - contains duplicate elements
+
 	- 3 fields
 		a) prev
 			- stores an address of prev element
