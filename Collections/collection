@@ -36,6 +36,7 @@ Generics
    	- top = -1 ->> stack is empty,
    	- (size-1) ->> stack is full
    	- size ->> stack is overflow
+
 5. LinkedList(C)
 	- data structure Doubly-linked list
 	- follows the insertion order
